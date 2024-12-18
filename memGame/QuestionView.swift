@@ -8,14 +8,48 @@
 import SwiftUI
 
 struct QuestionView: View {
+    @StateObject var viewModel = QuestionViewModel()
+    
+    @State private var text = ""
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                
+                
+                
+                ZStack(alignment: .topLeading) {
+                    TextField("", text: $text)
+                        .textFieldStyle(.roundedBorder)
+                        .padding(20)
+                    
+                    Text("Question")
+                        .font(.system(size: 13))
+                        .padding(10)
+                        .offset(x: 30, y: 3)
+                }
+                
+                Button {
+                    print("tap")
+                    viewModel.getMems()
+                    print(viewModel.mems)
+
+                } label: {
+                    Text("Fetch mems")
+                }
+                
+                NavigationLink {
+                    AnswerView(mems: viewModel.mems)
+//                    Text("View")
+                } label: {
+                    Text("See mem")
+                        .bold()
+                        .foregroundStyle(Color.red)
+                }
+                
+                
+            }
+            
         }
-        .padding()
     }
 }
 
