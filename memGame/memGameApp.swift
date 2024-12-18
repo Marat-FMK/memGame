@@ -11,7 +11,8 @@ import SwiftUI
 struct memGameApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            QuestionView()
+//            Answer
         }
     }
 }
