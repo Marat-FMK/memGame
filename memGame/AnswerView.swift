@@ -14,8 +14,15 @@ struct AnswerView: View {
     var body: some View {
         VStack{
             
-//            AsyncImage(url: URL(string: mems[0].url!))
-//                .frame(width: 250, height: 400)
+            AsyncImage(url: URL(string: mems[3].url!)) { phase in
+                if let image = phase.image {
+                    
+                    image
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 250, height: 350)
+                }
+            }
             
         }
             
