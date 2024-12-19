@@ -35,10 +35,12 @@ struct QuestionView: View {
 
                 } label: {
                     Text("Fetch mems")
+                        .padding(20)
                 }
                 
                 NavigationLink {
-                    AnswerView(mems: viewModel.mems)
+                    
+                    AnswerView(mems: viewModel.mems.shuffled())
 //                    Text("View")
                 } label: {
                     Text("See mem")
