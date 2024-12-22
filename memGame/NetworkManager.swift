@@ -20,7 +20,7 @@ class NetworkManager {
     func fetchMems(completion: @escaping (Result<AllMemes, Error>) -> Void) {
         
         guard let url = URL(string: link) else {
-            completion(.failure(ErrorList.invalidURL))
+            completion(.failure(ErrorList.invalidURL)) 
             return
         }
         
