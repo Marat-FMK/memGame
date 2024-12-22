@@ -18,5 +18,5 @@ struct DataMemes : Decodable {
 struct Mem: Decodable {
     let id: String?
     let name: String?
-    let url: String?
+    let url: String? 
 }
