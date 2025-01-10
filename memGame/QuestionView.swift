@@ -30,7 +30,7 @@ struct QuestionView: View {
                 
                 Button {
                     print("tap")
-                    viewModel.getMems() 
+                    viewModel.getMems() //get
                     print(viewModel.mems)
 
                 } label: {
