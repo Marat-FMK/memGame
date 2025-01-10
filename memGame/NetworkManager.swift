@@ -17,6 +17,7 @@ enum ErrorList: Error {
 class NetworkManager {
     let link = "https://api.imgflip.com/get_memes"
     
+    
     func fetchMems(completion: @escaping (Result<AllMemes, Error>) -> Void) {
         
         guard let url = URL(string: link) else {
