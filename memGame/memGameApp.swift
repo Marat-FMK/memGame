@@ -13,6 +13,7 @@ struct memGameApp: App {
         WindowGroup {
             QuestionView() 
 //            Answer
+            
         }
     }
 }
