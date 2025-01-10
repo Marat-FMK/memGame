@@ -17,6 +17,7 @@ class QuestionViewModel: ObservableObject {
     
     func getMems() {
 //        let mems: AllMemes?
+        // new 
         
         networkManager.fetchMems { result in
             switch result {
