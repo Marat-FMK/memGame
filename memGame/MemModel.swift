@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AllMemes: Decodable {
+struct AllMemes: Decodable { // Api model
     let data: DataMemes?
 }
 
