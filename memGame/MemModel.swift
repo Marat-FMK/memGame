@@ -14,6 +14,7 @@ struct AllMemes: Decodable { // Api model
 struct DataMemes : Decodable {
     let memes: [Mem]?
 }
+//
 
 struct Mem: Decodable {
     let id: String?
