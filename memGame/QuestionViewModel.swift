@@ -25,7 +25,7 @@ class QuestionViewModel: ObservableObject {
                 if let mems = result.data?.memes {
                     self.mems = mems
                 }
-                
+                // 
             case .failure( let error):
                print(error)
             }
