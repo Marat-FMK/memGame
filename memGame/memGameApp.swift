@@ -12,7 +12,7 @@ struct memGameApp: App {
     var body: some Scene {
         WindowGroup {
             QuestionView() 
-//            Answer
+//            Answer // 
             
         }
     }
