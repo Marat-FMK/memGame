@@ -15,7 +15,7 @@ struct QuestionView: View {
         NavigationView {
             VStack {
                 
-                ZStack(alignment: .topLeading) { // input reguest ва
+                ZStack(alignment: .topLeading) { // input reguest ва //
                     TextField("", text: $text)
                         .textFieldStyle(.roundedBorder)
                         .padding(20)
